@@ -1,0 +1,48 @@
+<div class="filter">
+  <button class="search-btn search-btn--open">
+    <svg class="icon icon-droplet" width="25" height="25">
+      <use href="./images/filter.svg#icon-filter"></use>
+    </svg>
+  </button>
+  <div class="filter__wrap">
+    <button class="search-btn search-btn--close">
+      <svg class="icon icon-droplet" width="25" height="25">
+        <use href="./images/filter.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <form class="genre-search" action="#" id="filter">
+      <label for="lang" class="search-label">Genres</label>
+      <select name="genres" id="genres" size="1" >
+        <legend></legend>
+        <option value="genres">Genres</option>
+      </select>
+
+      <label for="lang" class="search-label">Year</label>
+      <select name="genres" id="years" size="1">
+        <legend></legend>
+        <option class="first-opt" id="year-chose" value="year">year</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+      </select>
+
+      <label for="lang" class="search-label">Popularity</label>
+      <select name="genres" id="popularity" size="1">
+        <legend></legend>
+        <option value="option">popularity</option>
+        <option value="popularity">most popular first</option>
+        <option value="vote_count">users choise first</option>
+      </select>
+    </form>
+  </div>
+</div>

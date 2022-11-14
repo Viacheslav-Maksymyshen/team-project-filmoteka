@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <div class="browser"> -->
+  <!-- <div class="browser"> -->
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="./sass/index.scss" />
+  
+  </head>
+  <body>
+  <include src="./partials/loader.html"></include>
+  <include src="./partials/home-header.html"></include>
+    
+
+<main>
+  <include src="./partials/auth-form.html"></include>
+
+  <section class="section container">
+
+    <div class="loader__wrapper hidden">
+      <img
+        class="loader__in-section"
+        src="./images/loading.gif"
+        alt="Loading..."/>
+    </div>
+    
+    <ul class="card__list"></ul>
+
+    <div class="modal"></div>
+    
+ 
+  </section>
+</main>
+  
+  <include src="./partials/home-footer.html"></include>
+  <include src="./partials/footer-modal.html"></include>
+  <include src="./partials/registration-modal.html"></include>
+  
+  <script type="module" src="./index.js"></script>
+
+</body>
+</html>

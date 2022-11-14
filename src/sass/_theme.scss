@@ -1,0 +1,48 @@
+body {
+  background: #fff;
+}
+.theme {
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(39, 38, 40, 0.4);
+}
+
+.theme {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  bottom: -91px;
+  left: 30px;
+  transform: translateY(-50%);
+  padding: 9px;
+  background-color: #c20000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(39, 38, 40, 0.4);
+  border: 2px solid var(--secondary-text-color);
+  &:hover{
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+    background-color: #A50000;
+
+  }
+}
+.dark {
+  background: rgb(11, 11, 12);
+
+  h2 {
+    color: white;
+    text-align: center;
+  }
+
+  img {
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+  .card__item {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(248, 246, 246, 0.856),
+      0 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  .card__info {
+    text-align: center;
+  }
+}

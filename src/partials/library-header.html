@@ -1,0 +1,55 @@
+<header class="library__header">
+    <div class="header__container">
+        <ul class="header__nav-list">
+            <li>
+                <a href="index.html" class="header__logo">
+                <svg class="icon-film">
+                    <use href="/src/images/sprite.svg#icon-film"></use>
+                </svg>
+                <span class="header__logo-text">Filmoteka</span></a>
+            </li>
+            <li>
+                <ul class="header__nav-link-box">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="library.html" class="header__nav-link current">my library</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="library__button-box">
+            <button type="button" class="lib-button current-btn" data-action="watched">
+            watched
+            </button>
+            <button type="button" class="lib-button" data-action="queue">
+            queue
+            </button>
+        </div>
+
+        <div class="test">
+            <form id="sendToDBForm">
+                <button id="sendToDBFormBtn" class="icon-cloud-btn" type="submit" disabled>
+                    <svg class="icon-cloud">
+                        <use href="/src/images/sprite.svg#icon-cloud-upload"></use>
+                    </svg>
+                </button>
+                <button id="showMovieFromDB" class="icon-cloud-btn" type="submit" disabled>
+                    <svg class="icon-cloud">
+                        <use href="/src/images/sprite.svg#icon-cloud-download"></use>
+                    </svg>
+                </button>
+
+            </form>
+        </div>
+        
+        <button id="log_reg_button" class="reg-btn reg-btn--lib" type="button" data-modal-open-registration>
+            Sign up / Log in
+        </button>
+    </div>
+</header>
+<div class="library_DBfilms_popup" id="libraryDBPopup">
+
+</div>

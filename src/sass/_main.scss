@@ -1,0 +1,139 @@
+.card__item {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  transition-property: transform;
+  transition-duration: 250ms;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(248, 246, 246, 0.856), 0 5px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+  }
+}
+
+.card__link {
+  display: block;
+  text-decoration: none;
+}
+
+.card__poster {
+  width: 100%;
+  object-fit: cover;
+  transition: transform var(--animation-duration) var(--timing-function);
+  display: block;
+  border-radius: 6px;
+}
+
+.card__title {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-top: 10px;
+  // font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  // text-align: start;
+}
+.card__info {
+  font-size: 16px;
+  text-align: center;
+}
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+.card__genre {
+  display: inline;
+  text-align: start;
+  font-size: 14px;
+  line-height: 1.33;
+  color: var(--accent-color);
+}
+
+.btn-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 32px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #c20000;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  color: var(--light-color);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-to-top--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-to-top:hover {
+  background-color: #a50000;
+  transition: all 0.3s;
+}
+
+// ************************ TAB ***************************
+
+@media screen and (min-width: 768px) {
+  .card__list {
+    width: 704px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card__item {
+    width: calc((100% - 2 * 16px) / 2);
+    margin: 8px 8px 32px 8px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(248, 246, 246, 0.856),
+      0 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .card__poster {
+    height: 455px;
+  }
+}
+
+// *********************** DESK ********************
+
+@media screen and (min-width: 1280px) {
+  .card__list {
+    width: 1216px;
+  }
+
+  .card__item {
+    width: calc((100% - 3 * 16px) / 3);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(248, 246, 246, 0.856),
+      0 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .card__poster {
+    height: 574px;
+  }
+
+  .card__title {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .card__genre {
+    font-size: 16px;
+  }
+}
